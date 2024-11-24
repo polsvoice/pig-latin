@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-pyg = "ay"
+suffix = "ay"
 
 original = input("Enter a word:")
 
@@ -12,7 +12,7 @@ if len(original) > 0 and original.isalpha():
       first = first + letter
     else:
       break
-  new_word = word + first + pyg
+  new_word = word + first + suffix
   new_word = new_word[len(first):len(new_word)]
   print(new_word)
 else:
